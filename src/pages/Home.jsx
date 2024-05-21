@@ -1,8 +1,11 @@
 import React from 'react'
+import Selection from '../components/Selection'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Selection/>
+    </div>
   )
 }
 
