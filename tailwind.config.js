@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         newcolor: {
-          DEFAULT: "#1c64f2", // Default shade
+          DEFAULT: "#1c64f2",
           50: "#e3e8ff",
           100: "#c7d1ff",
           200: "#8f9cff",
@@ -25,8 +25,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#F7D05E", // Reference the new color
-          // Other theme settings...
+          primary: "#F7D05E", 
         },
       },
     ],
