@@ -2,6 +2,7 @@ import React from "react";
 import GreenBadge from "../Others/Badges/GreenBadge";
 import BlueBadge from "../Others/Badges/BlueBadge";
 import RedBadge from "../Others/Badges/RedBadge";
+import Button from "../Others/Button";
 
 const MainCard = (props) => {
   return (
@@ -25,9 +26,9 @@ const MainCard = (props) => {
       </div>
       <p className="font-bold pb-[15px] w-full max-w-[210px]">{props.name}</p>
       <p className="font-bold pb-[21px]">{props.price}</p>
-      <button className="w-full bg-primary rounded-full items-center justify-center flex text-white font-bold py-[12px] text-[12px]">
-        КУПИТЬ В ОДИН КЛИК
-      </button>
+      <div className="w-full">
+        <Button text={"КУПИТЬ В 1 КЛИК"} width={"w-full"} />
+      </div>
     </div>
   );
 };
