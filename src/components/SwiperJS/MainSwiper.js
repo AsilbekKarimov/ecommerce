@@ -22,7 +22,7 @@ const MainSwiper = ({ width, slides, delay }) => {
       >
         {slides.map((slide, id) => (
           <SwiperSlide key={id} className="relative">
-            <img src={slide.image} alt='swiper-img' className="w-full h-full" />
+            <img src={slide.image} alt='swiper-img' className="w-full h-full object-cover" />
             {slide.title && slide.description && (
               <div className='absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col gap-[25px] text-start pl-5'>
                 <h1 className='w-[440px] font-bold text-[36px] text-[#33394F] leading-[44px]'>{slide.title}</h1>
