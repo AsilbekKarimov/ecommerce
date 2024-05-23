@@ -6,6 +6,7 @@ import Cards from "../components/Cards/Cards";
 
 import MainSwiper from "../components/SwiperJS/MainSwiper.js";
 import ClothesSwiper from "../components/SwiperJS/ClothesSwiper.js";
+import Navbar from "../components/Navbar/Navbar.jsx";
 
 const bannerSlides = [
   {
@@ -81,7 +82,9 @@ const clothesSlides = [
 function Home() {
   return (
     <>
-      <header></header>
+      <header className="max-w-[80%] mx-auto">
+        <Navbar />
+      </header>
       <main>
         <section className="h-full mx-auto w-[90%] flex flex-col items-center justify-center gap-[20px]">
           <div className="h-full mx-auto w-full flex items-center justify-center gap-[20px]">
