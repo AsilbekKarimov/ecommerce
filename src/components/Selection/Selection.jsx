@@ -18,7 +18,7 @@ const cardData = [
 
 const Selection = () => {
   return (
-    <div className="flex container mx-auto max-w-[80%] gap-[20px]">
+    <div className="flex container mx-auto max-w-[73.5%] gap-[20px]">
       {cardData.map((card) => (
         <Card key={card.id} image={card.image} title={card.title}/>
       ))}
