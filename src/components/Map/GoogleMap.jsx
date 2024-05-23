@@ -9,7 +9,7 @@ const GoogleMap = () => {
       </div>
 
       <div>
-        <div className="p-6 max-w-md absolute z-10 bg-white text-start left-[200px]">
+        <div className="p-[18.2px] max-w-md absolute z-10 bg-white text-start left-[200px]">
           <p className="text-[15px] mb-1 text-[#33394F42]">Адрес шоурума:</p>
           <p className="mb-[10px] text-[#33394F9E] text-lg max-w-[70%]">Адрес шоурума:, г. Москва, Электролитный проезд 3Б стр 6</p>
 
