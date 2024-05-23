@@ -3,11 +3,12 @@ import CardList from "../components/Selection/Selection";
 import GoogleMap from "../components/Map/GoogleMap";
 import Catalog from "../components/Catalog/Catalog";
 import Cards from "../components/Cards/Cards";
-
 import MainSwiper from "../components/SwiperJS/MainSwiper.js";
 import ClothesSwiper from "../components/SwiperJS/ClothesSwiper.js";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import AboutCompany from "../components/AboutCompany";
+import NewsletterAdd from "../components/NewsletterAdd";
 
 const bannerSlides = [
   {
@@ -97,11 +98,15 @@ const Home = () => {
         </section>
 
         <GoogleMap />
+        <NewsletterAdd />
+        <AboutCompany />
         <Cards />
       </main>
-      <footer><Footer /></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
-}
+};
 
-export default Home
+export default Home;
