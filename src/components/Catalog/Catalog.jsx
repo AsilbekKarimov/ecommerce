@@ -4,7 +4,7 @@ import CatalogCard from "./CatalogCard";
 
 const Catalog = () => {
   return (
-    <div className="sm:w-full lg:w-[80%] mx-auto">
+    <div className="sm:w-full lg:w-[85%] mx-auto">
       <div className="flex gap-[20px] lg:flex-row sm:flex-col">
       <div>
         <CatalogCard image={"/catalog-images/4.png"} categoryName={"АКСЕССУАРЫ"}/>
