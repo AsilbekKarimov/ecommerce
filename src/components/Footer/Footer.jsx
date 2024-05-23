@@ -10,7 +10,7 @@ const Footer = () => {
     console.log('Подписан: ', email);
   };
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
+    <div className="flex flex-col justify-center items-center bg-gray-100">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg text-center w-full max-w-2xl mb-10">
         <h2 className="text-2xl mb-6">Подписаться на рассылку</h2>
         <div className="mb-6">
