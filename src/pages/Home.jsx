@@ -84,7 +84,8 @@ const clothesSlides = [
 const Home = () => {
   return (
     <>
-      <header className="max-w-[80%] mx-auto">
+      <header>
+        
         <Navbar />
       </header>
       <main>

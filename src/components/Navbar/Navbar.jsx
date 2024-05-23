@@ -30,8 +30,8 @@ const Navbar = ({ auth }) => {
   ];
 
   return (
-    <nav className='bg-white fixed z-50 '>
-      <div className='container mx-auto flex justify-between items-center'>
+    <nav className='bg-white fixed z-50 w-full top-0 left-0 container'>
+      <div className='max-w-[82%] mx-auto flex justify-between items-center'>
         <div>
           <Link to="/">
             <img src={logo} alt="logo" />
