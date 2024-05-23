@@ -1,13 +1,17 @@
-import React from "react";
+// В файле Home.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from '../layout/Footer'; // Проверьте правильность пути
 
-const Home = () => {
+function Home() {
   return (
-    <div>
-      <header></header>
-      <main></main>
-      <footer></footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/subscription" element={<Footer />} />
+        {/* Другие маршруты */}
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default Home;
