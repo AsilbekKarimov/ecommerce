@@ -1,12 +1,18 @@
-import React from 'react'
-import Selection from '../components/Selection'
+import React from "react";
+import CardList from "../components/Selection/Selection";
+import GoogleMap from "../components/Map/GoogleMap";
 
 const Home = () => {
   return (
     <div>
-      <Selection/>
+      <header></header>
+      <main>
+        <CardList />
+        <GoogleMap/>
+      </main>
+      <footer></footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
