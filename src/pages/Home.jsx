@@ -74,7 +74,7 @@ const clothesSlides = [
   },
 ]
 
-const Home = () => {
+function Home() {
   return (
     <>
       <header></header>
@@ -93,6 +93,6 @@ const Home = () => {
       <footer></footer>
     </>
   );
-};
+}
 
 export default Home;
