@@ -6,7 +6,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Здесь можно добавить логику для отправки email
+    // Emailga logika yozsen bolad !!!
     console.log('Подписан: ', email);
   };
   return (
