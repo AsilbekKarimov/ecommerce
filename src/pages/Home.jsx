@@ -7,6 +7,7 @@ import Cards from "../components/Cards/Cards";
 import MainSwiper from "../components/SwiperJS/MainSwiper.js";
 import ClothesSwiper from "../components/SwiperJS/ClothesSwiper.js";
 import Navbar from "../components/Navbar/Navbar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 const bannerSlides = [
   {
@@ -79,7 +80,7 @@ const clothesSlides = [
   },
 ];
 
-function Home() {
+const Home = () => {
   return (
     <>
       <header className="max-w-[80%] mx-auto">
@@ -98,9 +99,9 @@ function Home() {
         <GoogleMap />
         <Cards />
       </main>
-      <footer></footer>
+      <footer><Footer /></footer>
     </>
   );
 }
 
-export default Home;
+export default Home
