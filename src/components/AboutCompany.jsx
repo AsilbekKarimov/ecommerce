@@ -1,7 +1,7 @@
 import React from 'react'
-import Watch from '../pages/images/Watch.png'
-import Star from '../pages/images/Star.png'
-import Birka from '../pages/images/Birka.png'
+import Watch from '../components/images/Watch.png'
+import Star from '../components/images/Star.png'
+import Birka from '../components/images/Birka.png'
 
 const AboutCompany = () => {
   return (
@@ -27,7 +27,7 @@ const AboutCompany = () => {
             </h6>
             <p className='text-[#33394F9E] '>
             Бережно доставляем товары <br />
-по России за 24 часа
+по России за 24 часа    
             </p>
         </div>
         <div className='py-10'>
