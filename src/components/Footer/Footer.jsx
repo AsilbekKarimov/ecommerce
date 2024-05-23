@@ -10,9 +10,9 @@ const Footer = () => {
     console.log('Подписан: ', email);
   };
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
+    <div className="flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg text-center w-full max-w-2xl mb-10">
-        <h2 className="text-2xl mb-6">Подписаться на рассылку</h2>
+        <h2 className="text-4xl mb-6 text-[#33394F] font-bold">Подписаться на рассылку</h2>
         <div className="mb-6">
           <label className="block text-left mb-2">Почта</label>
           <div className="flex">
@@ -21,7 +21,7 @@ const Footer = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e-mail.com"
-              className="border p-3 flex-grow rounded-l-md"
+              className="border p-3 flex-grow rounded-l-md bg-gray-100"
             />
             <button type="submit" className="bg-yellow-500 text-white p-3 rounded-r-full">
               подписаться
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
       </form>
-      <div className="bg-white py-8 w-full text-center">
+      <div className="bg-white py-8 w-full text-center border-t border-t-[#D9D9D9]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between mb-6">
             <div className="text-left">

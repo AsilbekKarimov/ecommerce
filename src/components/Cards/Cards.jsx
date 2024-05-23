@@ -3,7 +3,7 @@ import MainCard from "./MainCard";
 
 const Cards = () => {
   return (
-    <div className="max-w-[90%] mx-auto flex flex-wrap">
+    <div className=" mx-auto flex flex-wrap bg-gray-100">
       <MainCard
         red
         name={'Боди без рукавов "ФРУК-ТИК", розовый'}
