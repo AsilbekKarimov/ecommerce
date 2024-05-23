@@ -5,7 +5,7 @@ import RedBadge from "../Others/Badges/RedBadge";
 
 const MainCard = (props) => {
   return (
-    <div className="w-1/6 text-center p-[8px]">
+    <div className="text-center p-[8px]">
       <div className="relative">
         {props.red ? (
           <div className="flex absolute left-[-6px] top-[6px]">
@@ -23,7 +23,7 @@ const MainCard = (props) => {
 
         <img src="/catalog-images/card-img.png" className="pb-[12px]" alt="" />
       </div>
-      <p className="font-bold pb-[15px]">{props.name}</p>
+      <p className="font-bold pb-[15px] w-full max-w-[210px]">{props.name}</p>
       <p className="font-bold pb-[21px]">{props.price}</p>
       <button className="w-full bg-primary rounded-full items-center justify-center flex text-white font-bold py-[12px] text-[12px]">
         КУПИТЬ В ОДИН КЛИК

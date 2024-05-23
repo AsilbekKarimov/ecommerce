@@ -9,6 +9,7 @@ const Home = () => {
       <main>
         <Catalog/>
         <Cards/>
+        
       </main>
       <footer></footer>
     </>
