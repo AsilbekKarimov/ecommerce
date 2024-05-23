@@ -4,14 +4,14 @@ import GoogleMap from "../components/Map/GoogleMap";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <header></header>
       <main>
         <CardList />
         <GoogleMap/>
       </main>
       <footer></footer>
-    </div>
+    </>
   );
 };
 

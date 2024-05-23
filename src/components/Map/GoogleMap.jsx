@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Others/Button";
 
 const GoogleMap = () => {
   return (
@@ -31,6 +32,7 @@ const GoogleMap = () => {
             Пожалуйста, свяжитесь с нами перед посещением, чтобы мы могли
             согласовать время вашего визита и наличие товаров.
           </p>
+          <Button text={"Написать нам"} />
         </div>
         <div className="flex relative">
           <iframe
