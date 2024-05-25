@@ -7,7 +7,6 @@ import NavbarInfo from './component/Navbarinfo/NavbarInfo';
 function App() {
   return (
     <div className="App">
-        <NavbarInfo />
     </div>
   );
 }

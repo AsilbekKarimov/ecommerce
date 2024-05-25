@@ -9,9 +9,10 @@ const Footer = () => {
     // Emailga logika yozsen bolad !!!
     console.log('Подписан: ', email);
   };
+
   return (
     <div className="flex flex-col justify-center items-center bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg text-center w-full max-w-2xl mb-10">
+      <form onSubmit={handleSubmit} className="bg-white rounded-lg text-center w-full max-w-2xl my-[70px] p-10">
         <h2 className="text-2xl mb-6">Подписаться на рассылку</h2>
         <div className="mb-6">
           <label className="block text-left mb-2">Почта</label>
@@ -23,8 +24,8 @@ const Footer = () => {
               placeholder="e-mail.com"
               className="border p-3 flex-grow rounded-l-md"
             />
-            <button type="submit" className="bg-yellow-500 text-white p-3 rounded-r-full">
-              подписаться
+            <button type="submit" className="bg-yellow-500 text-lg font-semibold hover:text-yellow-500 hover:bg-black duration-700 text-white py-3 px-8 rounded-r-full">
+              Подписаться
             </button>
           </div>
         </div>
@@ -34,7 +35,7 @@ const Footer = () => {
           <div className="flex justify-between mb-6">
             <div className="text-left">
               <h3 className="font-bold mb-2">Главная</h3>
-              <Link to="/">Как купить</Link><br />
+              <Link to="/how">Как купить</Link><br />
               <Link to="/">Доставка</Link><br />
               <Link to="/">О компании</Link><br />
               <Link to="/">Мы в Instagram</Link><br />
@@ -50,28 +51,32 @@ const Footer = () => {
               <Link to="/">Оплата и возврат</Link><br />
               <Link to="/">Условия доставки</Link><br />
             </div>
-            <div className="text-left">
-              <h3 className="font-bold mb-2">Контакты</h3>
-              <p>Адрес шоурума: г. Москва, Электролитный проезд 3Б стр 6</p>
-              <p>Email: info@lalastore.ru</p>
-              <p>Телефон: +7 916 361-30-00</p>
+            <div className='flex flex-col gap-10 items-center'>
+              <div className="text-left">
+                <h3 className="font-bold mb-2">Контакты</h3>
+                <div className='flex items-center mb-4'>
+                  <img src="https://img.icons8.com/?size=100&id=61845&format=png&color=000000" alt="Address" className="w-10 h-10 mr-2" />
+                  <p>Адрес магазина:</p>
+                </div>
+                <div className='flex items-center mb-4'>
+                  <img src="https://logowik.com/content/uploads/images/513_email.jpg" alt="Email" className="w-10 h-10 mr-2" />
+                  <p>Gmail</p>
+                </div>
+                <div className='flex items-center'>
+                  <img src="https://img.icons8.com/?size=100&id=Z5qxNghl0fPa&format=png&color=000000" alt="Phone" className="w-10 h-10 mr-2" />
+                  <p>Телефон:</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="mb-6">
-            <img src="path/to/logo.png" alt="" className="mx-auto mb-4" />
-            <p>2022 © «lalaSTORE»</p>
-          </div>
-          <div className="flex justify-center space-x-4 mb-6">
-            <img src="" alt="MIR" />
-            <img src="" alt="PayKeeper" />
-            <img src="" alt="Visa" />
-          </div>
-          <p>Политика конфиденциальности</p>
         </div>
+        <div className="mb-6">
+          <p>2024© «lalaSTORE»</p>
+        </div>
+        <p>Политика конфиденциальности</p>
       </div>
     </div>
   );
 }
-
 
 export default Footer;

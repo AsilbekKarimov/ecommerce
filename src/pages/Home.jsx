@@ -84,10 +84,6 @@ const clothesSlides = [
 const Home = () => {
   return (
     <>
-      <header>
-        
-        <Navbar />
-      </header>
       <main>
         <section className="h-full mx-auto w-[90%] flex flex-col items-center justify-center gap-[20px]">
           <div className="h-full mx-auto w-full flex items-center justify-center gap-[20px]">
@@ -103,9 +99,6 @@ const Home = () => {
         <AboutCompany />
         <Cards />
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };
