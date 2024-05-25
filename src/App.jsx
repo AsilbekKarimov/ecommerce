@@ -3,11 +3,12 @@
 import React from 'react';
 import './App.css';
 import NavbarInfo from './component/Navbarinfo/NavbarInfo';
+import DividerCustom from './component/other/Divider';
 
 function App() {
   return (
-    <div className="App">
-        <NavbarInfo />
+    <div className="App flex">
+      
     </div>
   );
 }
