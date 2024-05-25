@@ -19,7 +19,7 @@ const AboutCompany = () => {
 
 Нам доверяют, и к нам возвращаются!</p>
         </div>
-       <div className='  flex justify-around'>
+       <div className='  flex justify-around relative left-20'>
        <div className='py-10'>
             <img className='relative left-16 -top-3' src={Watch} alt="" />
             <h6 className='text-[#33394F]'>
