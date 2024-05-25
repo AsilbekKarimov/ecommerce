@@ -2,9 +2,9 @@ import React from "react";
 
 const DividerCustom = ({ text, color }) => {
   return (
-    <div style={{ color: color }} className=" w-full">
+    <div style={{ color: color }} className="w-full">
       <div
-        className={`divider divider-${color} font-bold text-[#33394F] text-3xl`}
+        className={`divider divider-accent font-bold text-[#33394F] text-3xl`}
       >
         {text}
       </div>
