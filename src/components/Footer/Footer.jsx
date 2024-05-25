@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-gray-100">
+    <div className="flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit} className="bg-white rounded-lg text-center w-full max-w-2xl my-[70px] p-10">
         <h2 className="text-2xl mb-6">Подписаться на рассылку</h2>
         <div className="mb-6">
@@ -22,7 +22,7 @@ const Footer = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e-mail.com"
-              className="border p-3 flex-grow rounded-l-md"
+              className="border p-3 flex-grow rounded-l-md bg-gray-100"
             />
             <button type="submit" className="bg-yellow-500 text-lg font-semibold hover:text-yellow-500 hover:bg-black duration-700 text-white py-3 px-8 rounded-r-full">
               Подписаться
