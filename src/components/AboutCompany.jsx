@@ -5,14 +5,14 @@ import Birka from '../components/images/Birka.png'
 
 const AboutCompany = () => {
   return (
-    <div className='py-5'>
-      <div>
-        <h2 className='text-[#33394F] text-2xl'>
+    <div className='py-5 '>
+      <div className='ml-80 '>
+        <h2 className='text-[#33394F] text-2xl ml-80 '>
         <b>
         О компании
         </b>
         </h2>
-        <p className='text-[#33394F9E] py-5'>LalaStore - магазин качественной и модной одежды и товаров для новорожденных и малышей до года. <br />
+        <p className='text-[#33394F9E] py-5'>  LalaStore - магазин качественной и модной одежды и товаров для новорожденных и малышей до года. <br />
 У нас вы подберете стильный комплект на выписку и базовый гардероб на первый год вашего ребенка. <br /> <br />
 
 Качество товаров на высоте, так как мы работаем только с проверенными поставщиками. Все изделия имеют <br /> сертификаты качества. <br /> <br /> 
