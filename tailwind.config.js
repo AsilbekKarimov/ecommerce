@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         newcolor: {
-          DEFAULT: "#1c64f2", // Default shade
+          DEFAULT: "#1c64f2",
           50: "#e3e8ff",
           100: "#c7d1ff",
           200: "#8f9cff",
@@ -25,11 +25,8 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#F7D05E",
-          "accent": "#33394F",
-          "neutral": "#3d4451",
-          "base-100": "#ffffff",
-          // additional custom colors
+          primary: "#F7D05E", 
+          secondary: "#cfaa3a"
         },
       },
       "dark",
