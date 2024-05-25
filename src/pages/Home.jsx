@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import AboutCompany from "../components/AboutCompany";
 import NewsletterAdd from "../components/NewsletterAdd";
+import DividerCustom from "../components/Others/Divider/Divider.jsx";
 
 const bannerSlides = [
   {
@@ -90,6 +91,7 @@ const Home = () => {
             <MainSwiper width="70%" slides={bannerSlides} delay={3000} />
             <MainSwiper width="20%" slides={cardSlides} delay={1500} />
           </div>
+          <DividerCustom text={"Каталог"} color={"black"} />
           <Catalog />
           <ClothesSwiper slides={clothesSlides} width="90%" />
         </section>
