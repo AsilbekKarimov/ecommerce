@@ -13,6 +13,7 @@ function App() {
 
         <Navbar />
       </header>
+      
       <main>
         <Outlet />
       </main>
