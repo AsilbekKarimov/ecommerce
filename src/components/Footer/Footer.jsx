@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import WaysOfDelivery from '../../pages/WaysOfDelivery';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -11,25 +12,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <form onSubmit={handleSubmit} className="bg-white rounded-lg text-center w-full max-w-2xl my-[70px] p-10">
-        <h2 className="text-2xl mb-6">Подписаться на рассылку</h2>
-        <div className="mb-6">
-          <label className="block text-left mb-2">Почта</label>
-          <div className="flex">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="e-mail.com"
-              className="border p-3 flex-grow rounded-l-md bg-gray-100"
-            />
-            <button type="submit" className="bg-yellow-500 text-lg font-semibold hover:text-yellow-500 hover:bg-black duration-700 text-white py-3 px-8 rounded-r-full">
-              Подписаться
-            </button>
-          </div>
-        </div>
-      </form>
+    <div className="flex flex-col justify-center items-center h-screen">
+    <WaysOfDelivery />
       <div className="bg-white py-8 w-full text-center">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between mb-6">
