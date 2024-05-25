@@ -5,7 +5,7 @@ import Birka from '../components/images/Birka.png'
 
 const AboutCompany = () => {
   return (
-    <div className='py-5 '>
+    <div className='py-5 w-full max-w-[90%]'>
       <div className='ml-80 '>
         <h2 className='text-[#33394F] text-2xl ml-80 '>
         <b>
