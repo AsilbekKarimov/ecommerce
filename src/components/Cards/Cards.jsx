@@ -1,5 +1,6 @@
 import React from "react";
 import MainCard from "./MainCard";
+import { Link } from "react-router-dom";
 
 const Cards = () => {
   const cardData = [
@@ -20,7 +21,7 @@ const Cards = () => {
     <div className=" mx-auto flex flex-wrap py-[60px] bg-[#F4F4F4]">
       <div className="w-full max-w-[90%] flex flex-wrap mx-auto justify-center">
       {cardData.map((item, id) => (
-        <MainCard key={id} image={item.image} badge={item.badge} price={item.price} name={truncateDescription(item.name, 38)} />
+        <Link to={'/info'}><MainCard key={id} image={item.image} badge={item.badge} price={item.price} name={truncateDescription(item.name, 38)} /></Link>
       ))}
       </div>
     </div>
