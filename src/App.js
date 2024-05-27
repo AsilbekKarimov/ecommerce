@@ -3,14 +3,14 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import NavbarInfo from "./component/Navbarinfo/NavbarInfo";
+import DividerCustom from "./components/Others/Divider/Divider";
+import NavbarInfo from "./components/Navbarinfo/NavbarInfo";
 
 function App() {
   return (
     <div>
       <header>
-      <NavbarInfo />
-
+        <NavbarInfo />
         <Navbar />
       </header>
       <main>
