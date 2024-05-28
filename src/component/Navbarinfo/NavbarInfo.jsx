@@ -8,11 +8,11 @@ const NavbarInfo = () => {
                     <div className='flex gap-10  flex-1'>
                         <p className='flex items-center '>
                             <img src="/images/Vector (4).png" alt="Location Icon" className="mr-2" />
-                            <span>г. Москва, Электролитный проезд 3Б стр 6</span>
+                            <span> Uchtepa tumani  xurshid maxalla  toqimachi 14 uy </span>
                         </p>
                         <p className=' flex items-center '>
                             <img src="/images/Vector (5).png" alt="Phone Icon" className="mr-2" />
-                            <span>+7 916 361-30-00</span>
+                            <span>50 589 31 31</span>
                         </p>
                     </div>
                     <ul className="flex items-center flex-1 justify-between">

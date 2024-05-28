@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import NavbarInfo from "./component/Navbarinfo/NavbarInfo";
+import Descriptions from "./component/descriptions";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </main>
       <footer>
         <Footer />
+        
       </footer>
     </div>
   );

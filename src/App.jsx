@@ -3,8 +3,10 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import NavbarInfo from "./component/Navbarinfo/NavbarInfo";
-import DividerCustom from "./component/other/Divider";
+import NavbarInfo from "./components/Navbarinfo/NavbarInfo";
+import DividerCustom from "./components/other/Divider";
+import Descriptions from './components/Descriptions';  // Обновленный путь
+
 
 function App() {
     return (
@@ -16,6 +18,7 @@ function App() {
             <DividerCustom text={"Asyol lox"} />
             <main>
                 <Outlet />
+                <Descriptions />
             </main>
             <footer>
                 <Footer />
