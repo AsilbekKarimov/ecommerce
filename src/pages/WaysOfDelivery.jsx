@@ -4,14 +4,12 @@ import Cards from '../components/Cards/Cards';
 const WaysOfDelivery = () => {
   return (
     <div className="container mx-auto max-w-[85%]">
-      <div className="py-8 flex flex-col justify-center items-center h-screen">
+      <div className="py-8">
         <div className="text-center py-2 px-4 mb-6">
           <h1 className="text-2xl font-bold">Доставка</h1>
-          <div className='bg-gray-600'>
-            <p className="">Главная - Доставка</p>
-          </div>
+          <p className="bg-gray-300 w-full   inline-block mt-2 ">Главная - Доставка</p>
         </div>
-        <h2 className="text-xl font-semibold mt-6"  >Способы доставки:</h2>
+        <h2 className="text-xl font-semibold mt-6">Способы доставки:</h2>
         <p className="mt-4">Доставка ваших заказов осуществляется по всей России следующими способами:</p>
         <div className="mt-4 space-y-4">
           <div>
@@ -27,9 +25,9 @@ const WaysOfDelivery = () => {
             <p>До удобного вам отделения связи – стоимость и срок доставки* зависит от вашего города проживания и размера упаковки вашего заказа.</p>
           </div>
           <div>
-            <h4 className="font-medium text-gray-800">
+            <p className="font-medium text-gray-800">
               *Отправление заказов осуществляется в срок от 1-3 раб. дн. с момента оплаты вами заказа. (Зачастую отправления заказов осуществляются в срок 1-2 дня). Заказы, сделанные в пятницу после 15:00 и в выходные дни - подтверждаются в понедельник и ближайшая доставка по Москве – вторник или среда.
-            </h4>
+            </p>
           </div>
           <div>
             <h3 className="font-semibold">4. Самовывоз</h3>
