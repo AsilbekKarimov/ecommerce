@@ -10,7 +10,7 @@ const NewsletterAdd = () => {
         <p className=' text-[#33394F9E] relative -top-4 ml-[55vh]' >Присоеденитесь к программе LFLF STORE, чтобы получать <br /> постоянные скидки и персональные предложения</p>
       </div>
       <div className='flex justify-center'>
-<Link  className='w-[301px] h-[45px] flex justify-center items-center rounded-3xl bg-[#F7D05E] text-white relative -top-8'>оформить подписку</Link>
+        <Link className='w-[301px] h-[45px] flex justify-center items-center rounded-3xl bg-[#F7D05E] text-white relative -top-8'>оформить подписку</Link>
 
       </div>
     </div>

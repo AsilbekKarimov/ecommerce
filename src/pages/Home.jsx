@@ -86,7 +86,7 @@ const Home = () => {
   return (
     <>
       <main>
-        <section className="h-full mx-auto flex flex-col items-center justify-center gap-[20px]">
+        <section className="h-full mx-auto flex flex-col items-center justify-center">
           <div className="h-full mx-auto w-full flex items-center justify-center gap-[20px]">
             <MainSwiper width="70%" slides={bannerSlides} delay={3000} />
             <MainSwiper width="20%" slides={cardSlides} delay={1500} />
