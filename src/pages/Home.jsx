@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import AboutCompany from "../components/AboutCompany";
 import NewsletterAdd from "../components/NewsletterAdd";
+import DividerCustom from "../components/Others/Divider/Divider.jsx";
 
 const bannerSlides = [
   {
@@ -84,16 +85,13 @@ const clothesSlides = [
 const Home = () => {
   return (
     <>
-      <header>
-        
-        <Navbar />
-      </header>
       <main>
-        <section className="h-full mx-auto w-[90%] flex flex-col items-center justify-center gap-[20px]">
+        <section className="h-full mx-auto flex flex-col items-center justify-center">
           <div className="h-full mx-auto w-full flex items-center justify-center gap-[20px]">
             <MainSwiper width="70%" slides={bannerSlides} delay={3000} />
             <MainSwiper width="20%" slides={cardSlides} delay={1500} />
           </div>
+          <DividerCustom text={"Каталог"}  />
           <Catalog />
           <ClothesSwiper slides={clothesSlides} width="90%" />
         </section>
@@ -103,9 +101,6 @@ const Home = () => {
         <AboutCompany />
         <Cards />
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };

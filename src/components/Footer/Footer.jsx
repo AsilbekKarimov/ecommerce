@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center">
       <SubscribeNewsletter handleSubmit={handleSubmit} email={email} setEmail={setEmail} />
       <div className="bg-white py-8 w-full text-center">
         <div className="max-w-6xl mx-auto px-4">
