@@ -24,7 +24,7 @@ const Navbar = ({ auth }) => {
   ];
 
   return (
-    <nav className="bg-white fixed z-50 w-full top-[69px] left-0">
+    <nav className="bg-white fixed z-40 w-full top-[69px] left-0">
       <div className="container max-w-[82%] mx-auto flex justify-between items-center">
         <div>
           <Link to="/">

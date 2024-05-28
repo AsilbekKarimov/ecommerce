@@ -51,7 +51,7 @@ const Catalog = () => {
   return (
    <>
       {categories.map((category, index) => (
-        <div className='flex flex-1'>
+        <div className='flex flex-1 z-[55]'>
           <ul className=''>
             <li key={index} className='flex-1 flex-col'>
               <p className='font-bold text-base text-white'>{category.title}</p>

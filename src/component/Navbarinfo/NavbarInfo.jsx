@@ -20,7 +20,7 @@ const NavbarInfo = () => {
                         <li className=''>
                             <div className="dropdown dropdown-hover">
                                 <div tabIndex={0} role="button" className="">Каталог</div>
-                                <ul tabIndex={0} className="dropdown-content overflow-y-auto max-h-[450px] flex-1 flex absolute z-[1] menu p-2 shadow rounded-box w-[1440px] -left-[720px] bg-[#2D3242]">
+                                <ul tabIndex={0} className="dropdown-content overflow-y-auto max-h-[450px] flex-1 flex absolute menu p-2 shadow rounded-box w-[1440px] -left-[720px] bg-[#2D3242]">
                                     <Catalog />
                                 </ul>
                             </div>
