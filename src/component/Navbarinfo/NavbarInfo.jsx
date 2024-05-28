@@ -1,5 +1,5 @@
 import React from 'react';
-import Catalog from '../other/Catalog';
+import Catalog from '../../components/CatalogLinks/CatalogLinks';
 
 const NavbarInfo = () => {
     return (
