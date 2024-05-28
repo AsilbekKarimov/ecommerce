@@ -15,6 +15,7 @@ import {
   WaysOfDelivery,
 } from "./pages/main";
 import App from "./App";
+import CardInfo from "./pages/CardInfo";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/info",
+        element: <CardInfo />,
       },
     ],
   },
