@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../components/Others/Button";
 import BlueBadge from "../components/Others/Badges/BlueBadge";
+import CardInfoSwiper from "../components/SwiperJS/CardInfoSwiper";
 
 const CardInfo = () => {
+  
+
   return (
     <div className="mt-[170px]">
       <div className="w-[100%] max-w-[90%] mx-auto">
         <div className="flex lg:flex-row sm:flex-col lg:items-start sm:items-center">
           <div className="flex sm:justify-center lg:justify-start">
             <div>
-              <img src="/card-info-images/card-info-swiper 1.png" alt="" />
-              <img src="/card-info-images/card-info-swiper 2.png" alt="" />
+              <CardInfoSwiper />
             </div>
             <img
               src="/card-info-images/card-info-swiper-main.png"
