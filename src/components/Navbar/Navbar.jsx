@@ -30,7 +30,7 @@ const Navbar = ({ auth }) => {
   ];
 
   return (
-    <nav className="bg-white fixed z-50 w-full top-[72px] left-0  ">
+    <nav className="bg-white fixed z-50 w-full top-[69px] left-0">
       <div className="container max-w-[82%] mx-auto flex justify-between items-center">
         <div>
           <Link to="/">
@@ -52,7 +52,7 @@ const Navbar = ({ auth }) => {
           </button>
         </div>
 
-        <div className="flex gap-24 items-center">
+        <div className="flex gap-16 items-center">
           {links.map((link, index) => (
             <Link
               className="flex flex-col text-[10px] font-normal text-center items-center gap-2"
