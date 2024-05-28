@@ -13,9 +13,9 @@ import {
   Cart,
   Login,
   WaysOfDelivery,
+  CardInfo,
 } from "./pages/main";
 import App from "./App";
-import CardInfo from "./pages/CardInfo";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/delivery",
-        element: <Delivery />,
+        element: <WaysOfDelivery />,
       },
       {
         path: "/aboutus",
@@ -62,11 +62,8 @@ const router = createBrowserRouter([
         path: "/info",
         element: <CardInfo />,
       },
+    
     ],
-  },
-  {
-    path: "/se",
-    element: <WaysOfDelivery />,
   },
 ]);
 

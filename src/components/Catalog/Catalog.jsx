@@ -4,7 +4,7 @@ import DividerCustom from "../Others/Divider/Divider";
 
 const Catalog = () => {
   return (
-    <div className="sm:w-full lg:w-[90%] mx-auto py-[70px]">
+    <div className="sm:w-full lg:w-[90%] mx-auto">
 
       <div className="flex gap-[20px] lg:flex-row sm:flex-col">
         <div>

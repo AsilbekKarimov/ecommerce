@@ -2,7 +2,9 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div></div>
+    <div>\
+      <h1>Helllo</h1>
+    </div>
   )
 }
 
