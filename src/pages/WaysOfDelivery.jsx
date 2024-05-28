@@ -1,15 +1,16 @@
 import React from 'react';
 import Cards from '../components/Cards/Cards';
+import TextTitle from '../components/TextTitle/TextTitle';
 
 const WaysOfDelivery = () => {
   return (
     <div className="container mx-auto max-w-[85%]">
-      <div className="py-8">
-        <div className="text-center py-2 px-4 mb-6">
-          <h1 className="text-2xl font-bold">Доставка</h1>
-          <p className="bg-gray-300 w-full   inline-block mt-2 ">Главная - Доставка</p>
+      <div className="py-8 flex flex-col z-40 mt-40">
+        <div className="text-center py-2 px-4 mb-6 ">
+          <TextTitle text="Доставка" />
+          <p className="bg-gray-300 w-full inline-block mt-2">Главная - Доставка</p>
         </div>  
-        <h2 className="text-xl font-semibold mt-6">Способы доставки:</h2>
+        <TextTitle text="Способы доставки:" />
         <p className="mt-4">Доставка ваших заказов осуществляется по всей России следующими способами:</p>
         <div className="mt-4 space-y-4">
           <div>

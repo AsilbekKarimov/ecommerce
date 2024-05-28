@@ -25,7 +25,7 @@ const NavbarInfo = () => {
                             </details>
                         </li>
                         <li className='bold-text'>Главная</li>
-                        <li>Как купить</li>
+                        <li></li>
                         <li>Доставка</li>
                         <li>О компании</li>
                         <li>Мы в instagram</li>
