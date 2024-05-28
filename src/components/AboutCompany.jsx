@@ -5,9 +5,9 @@ import Birka from '../components/images/Birka.png'
 
 const AboutCompany = () => {
   return (
-    <div className='py-5 '>
-      <div className='ml-80 '>
-        <h2 className='text-[#33394F] text-2xl ml-80 '>
+    <div className='py-5  text-center'>
+      <div className=''>
+        <h2 className='text-[#33394F] text-2xl '>
         <b>
         О компании
         </b>
@@ -19,7 +19,7 @@ const AboutCompany = () => {
 
 Нам доверяют, и к нам возвращаются!</p>
         </div>
-       <div className='  flex justify-around'>
+       <div className='  flex justify-around relative '>
        <div className='py-10'>
             <img className='relative left-16 -top-3' src={Watch} alt="" />
             <h6 className='text-[#33394F]'>

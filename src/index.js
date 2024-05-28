@@ -14,6 +14,8 @@ import {
   Saved,
   Cart,
   Login,
+  WaysOfDelivery,
+  CardInfo,
 } from "./pages/main";
 import App from "./App";
 
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/delivery",
-        element: <Delivery />,
+        element: <WaysOfDelivery />,
       },
       {
         path: "/aboutus",
@@ -58,6 +60,11 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {
+        path: "/info",
+        element: <CardInfo />,
+      },
+    
     ],
   },
 ]);

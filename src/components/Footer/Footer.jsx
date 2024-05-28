@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SubscribeNewsletter from '../SubscribeNewsletter';
 import WaysOfDelivery from '../../pages/WaysOfDelivery';
 
 const Footer = () => {
@@ -12,8 +13,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
-    <WaysOfDelivery />
+    <div className="flex flex-col justify-center items-center">
+      <SubscribeNewsletter handleSubmit={handleSubmit} email={email} setEmail={setEmail} />
       <div className="bg-white py-8 w-full text-center">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between mb-6">

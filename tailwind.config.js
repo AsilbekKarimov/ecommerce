@@ -25,8 +25,11 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#F7D05E", 
-          secondary: "#cfaa3a"
+          primary: "#F7D05E",
+          secondary: "#cfaa3a",
+          accent: "#33394F",
+        
+          // additional custom colors
         },
       },
       "dark",

@@ -21,16 +21,10 @@ const Navbar = ({ auth }) => {
       alt: "shopping-cart",
       text: "Корзина",
     },
-    {
-      to: "/profile",
-      imgSrc: profilePic,
-      alt: "profile-pic",
-      text: auth ? "Войти" : "Зарегистрироваться",
-    },
   ];
 
   return (
-    <nav className="bg-white fixed z-50 w-full top-[65px] left-0  ">
+    <nav className="bg-white fixed z-40 w-full top-[69px] left-0">
       <div className="container max-w-[82%] mx-auto flex justify-between items-center">
         <div>
           <Link to="/">
@@ -43,7 +37,7 @@ const Navbar = ({ auth }) => {
             <img src={search} alt="search" />
           </div>
           <input
-            className="pr-[300px] pl-14 text-[16px] py-2 rounded-3xl bg-slate-200 "
+            className="min-w-[520px] w-full pl-14 text-[16px] py-2 rounded-3xl bg-slate-200 "
             type="search"
             placeholder="Начните писать"
           />
@@ -52,7 +46,7 @@ const Navbar = ({ auth }) => {
           </button>
         </div>
 
-        <div className="flex gap-24 items-center">
+        <div className="flex gap-[55%] items-center">
           {links.map((link, index) => (
             <Link
               className="flex flex-col text-[10px] font-normal text-center items-center gap-2"
