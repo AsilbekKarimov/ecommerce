@@ -8,7 +8,7 @@ const WaysOfDelivery = () => {
         <div className="text-center py-2 px-4 mb-6">
           <h1 className="text-2xl font-bold">Доставка</h1>
           <p className="bg-gray-300 w-full   inline-block mt-2 ">Главная - Доставка</p>
-        </div>
+        </div>  
         <h2 className="text-xl font-semibold mt-6">Способы доставки:</h2>
         <p className="mt-4">Доставка ваших заказов осуществляется по всей России следующими способами:</p>
         <div className="mt-4 space-y-4">
