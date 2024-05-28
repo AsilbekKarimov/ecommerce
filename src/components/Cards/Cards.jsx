@@ -2,22 +2,27 @@ import React from "react";
 import MainCard from "./MainCard";
 
 const Cards = () => {
+  const cardData = [
+    { badge: "red", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', image: "/catalog-images/card-img.png" },
+    { badge: "red", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', image: "/catalog-images/card-img.png" },
+    { badge: "blue", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', image: "/catalog-images/card-img.png" },
+    { badge: "blue", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', image: "/catalog-images/card-img.png" },
+    { badge: "green", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', image: "/catalog-images/card-img.png" },
+    { badge: "blue", name: 'Боди без рукавов "ФРУК-ТИК", розовый', price: '349 ₽/шт', discount: '10%', image: "/catalog-images/card-img.png" }
+  ];
+
+  const truncateDescription = (name, maxLength) =>
+    name.length > maxLength
+      ? `${name.substring(0, maxLength - 3)}...`
+      : name;
+  
   return (
-    <div className=" mx-auto flex flex-wrap bg-gray-100">
-      <MainCard
-        red
-        name={'Боди без рукавов "ФРУК-ТИК", розовый'}
-        price={"349 ₽/шт"}
-      />
-      <MainCard
-        name={'Боди без рукавов "ФРУК-ТИК", розовый'}
-        price={"349 ₽/шт"}
-      />
-      <MainCard
-        blue
-        name={'Боди без рукавов "ФРУК-ТИК", розовый'}
-        price={"349 ₽/шт"}
-      />
+    <div className=" mx-auto flex flex-wrap py-[60px] bg-[#F4F4F4]">
+      <div className="w-full max-w-[90%] flex flex-wrap mx-auto justify-center">
+      {cardData.map((item, id) => (
+        <MainCard key={id} image={item.image} badge={item.badge} price={item.price} name={truncateDescription(item.name, 38)} />
+      ))}
+      </div>
     </div>
   );
 };

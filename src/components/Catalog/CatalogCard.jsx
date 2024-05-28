@@ -5,7 +5,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 const CatalogCard = (props) => {
   return (
     <div className={`relative flex sm:flex-col lg justify-center items-center w-full lg:h-full sm:h-[375px] `}>
-      <img src={props.image} className="size-[100%] lg:h-full sm:h-[300px] z-0 rounded-[10px]" alt="" />
+      <img src={props.image} className="size-[100%] lg:h-full sm:h-[300px] object-cover z-0 rounded-[10px]" alt="" />
       <div className={`dropdown dropdown-bottom bg-primary bottom-0 w-full z-10 items-center flex justify-center cursor-pointer absolute rounded-b-[10px] px-[${props.px}]`}>
         <div tabIndex={0} role="button" className="m-1 text-white w-full justify-center h-full py-[20px] flex items-center font-semibold gap-1">
           {props.categoryName}<BiSolidDownArrow className="text-[10px]"/>
