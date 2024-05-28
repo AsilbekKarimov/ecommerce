@@ -3,8 +3,8 @@ import Cards from '../components/Cards/Cards';
 
 const WaysOfDelivery = () => {
   return (
-    <div className="container mx-auto max-w-[85%]">
-      <div className="py-8">
+    <div className="container mx-auto ">
+      <div className="py-8 max-w-[90%] mx-auto">
         <div className="text-center py-2 px-4 mb-6">
           <h1 className="text-2xl font-bold">Доставка</h1>
           <p className="bg-gray-300 w-full   inline-block mt-2 ">Главная - Доставка</p>
