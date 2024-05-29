@@ -1,5 +1,4 @@
 export { default as AboutUs } from "./AboutUs";
-export { default as Delivery } from "./Delivery";
 export { default as Home } from "./Home";
 export { default as HowBuy } from "./HowBuy";
 export { default as Socials } from "./Socials";
