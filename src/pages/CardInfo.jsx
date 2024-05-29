@@ -13,12 +13,7 @@ const CardInfo = () => {
           <div className="flex sm:justify-center lg:justify-start">
             <div>
               <CardInfoSwiper />
-            </div>
-            <img
-              src="/card-info-images/card-info-swiper-main.png"
-              className="w-[51.7%] object-cover"
-              alt=""
-            />
+            </div>  
           </div>
           <div className="flex flex-col lg:items-start sm:justify-center py-[45px] w-[50%]">
             <div className="flex mb-[15px] gap-[28px] items-center ">

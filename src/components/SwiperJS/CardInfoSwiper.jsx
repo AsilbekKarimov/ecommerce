@@ -1,15 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './styles.css';
 
-// Import required modules
-import { Pagination } from 'swiper/modules';
+// import required modules
+import { Navigation } from 'swiper/modules';
 
-const CardInfoSwiper = (props) => {
+const CardInfoSwiper = ({ width }) => {
+
     const [loading, setLoading] = useState(false);
     const [card, setCard] = useState([]);
 
@@ -31,28 +33,69 @@ const CardInfoSwiper = (props) => {
         CardData();
     }, []);
 
-    return (
-        <>
-            <Swiper
-                slidesPerView={2}
-                direction={'vertical'}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                {
-                    loading
-                        ? card.map((item, id) => (
-                            <SwiperSlide key={id}>
-                                <img src={item.image} alt={`Card image ${id}`} />
-                            </SwiperSlide>
-                        ))
-                        : <span className="loading loading-ring loading-lg"></span>
-                }
-            </Swiper>
-        </>
-    );
+  return (
+    <div className="flex items-center justify-center h-[474px]" style={{ width }}>
+      <Swiper
+        direction={'vertical'}
+        slidesPerView={2}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
+        {card.map((slide, id) => (
+          <SwiperSlide>
+            <div key={id} className='flex size-[237px]'>
+              <img src={slide.image} alt='swiper-img' className="w-full" />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <img src="/card-info-images/card-info-swiper-main.png" alt="" />
+    </div>
+  );
 }
-export default CardInfoSwiper;
+
+export default CardInfoSwiper
+
+
+
+
+
+// import React, { useRef, useState } from 'react';
+// // Import Swiper React components
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// // Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+
+
+// // import required modules
+// import { Pagination } from 'swiper/modules';
+
+// export default function App() {
+//   return (
+//     <>
+//       <Swiper
+//         direction={'vertical'}
+//         pagination={{
+//           clickable: true,
+//         }}
+//         modules={[Pagination]}
+//         className="mySwiper"
+//       >
+//         <SwiperSlide>Slide 1</SwiperSlide>
+//         <SwiperSlide>Slide 2</SwiperSlide>
+//         <SwiperSlide>Slide 3</SwiperSlide>
+//         <SwiperSlide>Slide 4</SwiperSlide>
+//         <SwiperSlide>Slide 5</SwiperSlide>
+//         <SwiperSlide>Slide 6</SwiperSlide>
+//         <SwiperSlide>Slide 7</SwiperSlide>
+//         <SwiperSlide>Slide 8</SwiperSlide>
+//         <SwiperSlide>Slide 9</SwiperSlide>
+//       </Swiper>
+//     </>
+//   );
+// }
