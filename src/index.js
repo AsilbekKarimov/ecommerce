@@ -13,6 +13,7 @@ import {
   Login,
   WaysOfDelivery,
   CardInfo,
+  NotFound,
 } from "./pages/main";
 import App from "./App";
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
       {
         path: "/howtobuy",

@@ -9,3 +9,4 @@ export { default as Login } from "./Login";
 export { default as TextBodi } from "./TextBodi";
 export { default as WaysOfDelivery } from "./WaysOfDelivery";
 export { default as CardInfo } from "./CardInfo";
+export { default as NotFound } from "./NotFound";

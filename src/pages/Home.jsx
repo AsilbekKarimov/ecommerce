@@ -10,6 +10,7 @@ import DividerCustom from "../components/Others/Divider/Divider.jsx";
 import { bannerSlides } from "../components/SwiperJS/BannerSlides.js";
 import { cardSlides } from "../components/SwiperJS/CardSlides.js";
 import { clothesSlides } from "../components/SwiperJS/ClothesSlides.js";
+import SubscribeNewsletter from "../components/SubscribeNewsletter.jsx";
 
 const Home = () => {
   return (
@@ -29,6 +30,8 @@ const Home = () => {
         <NewsletterAdd />
         <AboutCompany />
         <Cards />
+        <SubscribeNewsletter />
+
       </main>
     </>
   );
