@@ -5,7 +5,6 @@ import "./index.css";
 import {
   Home,
   AboutUs,
-  Delivery,
   HowBuy,
   Socials,
   Stocks,
@@ -62,7 +61,6 @@ const router = createBrowserRouter([
         path: "/info",
         element: <CardInfo />,
       },
-    
     ],
   },
 ]);
