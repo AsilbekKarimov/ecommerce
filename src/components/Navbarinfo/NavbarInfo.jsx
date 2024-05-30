@@ -1,6 +1,7 @@
 import React from 'react';
 import Catalog from '../../components/CatalogLinks/CatalogLinks';
 import { MdOutlineArrowDropDown } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const NavbarInfo = () => {
     return (
@@ -27,7 +28,7 @@ const NavbarInfo = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Главная</li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link></Link></li>
                         <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Как купить</li>
                         <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Доставка</li>
                         <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>О компании</li>
