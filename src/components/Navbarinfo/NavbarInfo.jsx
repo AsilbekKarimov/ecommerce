@@ -1,5 +1,7 @@
 import React from 'react';
 import Catalog from '../../components/CatalogLinks/CatalogLinks';
+import { Link } from 'react-router-dom';
+
 
 const NavbarInfo = () => {
     return (
@@ -17,20 +19,20 @@ const NavbarInfo = () => {
                         </p>
                     </div>
                     <ul className="flex items-center flex-1 justify-between">
-                        <li className=''>
+                        <Link to={"/"} className=''>
                             <div className="dropdown dropdown-hover">
                                 <div tabIndex={0} role="button" className="">Каталог</div>
                                 <ul tabIndex={0} className="dropdown-content overflow-y-auto max-h-[450px] flex-1 flex absolute menu p-2 shadow rounded-box w-[1440px] -left-[720px] bg-[#2D3242]">
                                     <Catalog />
                                 </ul>
                             </div>
-                        </li>
-                        <li className=''>Главная</li>
-                        <li>Как купить</li>
-                        <li>Доставка</li>
-                        <li>О компании</li>
-                        <li>Мы в instagram</li>
-                        <li>Акции</li>
+                        </Link>
+                        <Link to={"/"} className=''>Главная</Link>
+                        <Link to={"/"}>Как купить</Link>
+                        <Link to={"/"}>Доставка</Link>
+                        <Link to={"/aboutus"}>О компании</Link>
+                        <Link to={"/"}>Мы в instagram</Link>
+                        <Link to={"/"}>Акции</Link>
                     </ul>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import NavbarInfo from "./components/Navbarinfo/NavbarInfo";
 import DividerCustom from "./components/other/Divider";
-import Descriptions from './components/Descriptions';  // Обновленный путь
+import Descriptions from './components/';  // Обновленный путь
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <DividerCustom text={"Asyol lox"} />
             <main>
                 <Outlet />
-                <Descriptions />
+                
             </main>
             <footer>
                 <Footer />

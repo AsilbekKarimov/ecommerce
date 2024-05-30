@@ -7,7 +7,6 @@ const Catalog = () => {
     <div className="sm:w-full lg:w-[90%] mx-auto">
 
       <div className="flex gap-[20px] lg:flex-row sm:flex-col">
-<<<<<<< HEAD
         <div className="flex-1">
           <CatalogCard image={"/catalog-images/4.png"} categoryName={"АКСЕССУАРЫ"} />
         </div>
@@ -25,7 +24,7 @@ const Catalog = () => {
         <div className="flex-1">
           <CatalogCard image={"/catalog-images/2.png"} categoryName={"ГОТОВЫЕ ПОДБОРКИ"} />
         </div>
-=======
+
         <div>
           <CatalogCard
             image={"/catalog-images/4.png"}
@@ -51,7 +50,7 @@ const Catalog = () => {
             />
           </div>
         </div>
->>>>>>> c5ee5c9019f45c23272a8fa8cd04b0c5866cedec
+
 
         <div>
           <CatalogCard
