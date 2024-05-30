@@ -18,7 +18,7 @@ const MainSwiper = ({ width, slides, delay }) => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper h-[360px]"
+        className="mySwiper h-[360px] rounded-[10px]"
       >
         {slides.map((slide, id) => (
           <SwiperSlide key={id} className="relative">
