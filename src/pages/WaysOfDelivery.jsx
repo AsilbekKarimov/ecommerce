@@ -4,12 +4,13 @@ import TextTitle from '../components/TextTitle/TextTitle';
 
 const WaysOfDelivery = () => {
   return (
+    <div>
     <div className="container mx-auto max-w-[85%]">
       <div className="py-8 flex flex-col z-40 mt-40">
-        <div className="text-center py-2 px-4 mb-6 ">
+        <div className="text-center py-2 px-4 mb-6">
           <TextTitle text="Доставка" />
           <p className="bg-gray-300 w-full inline-block mt-2">Главная - Доставка</p>
-        </div>  
+        </div>
         <TextTitle text="Способы доставки:" />
         <p className="mt-4">Доставка ваших заказов осуществляется по всей России следующими способами:</p>
         <div className="mt-4 space-y-4">
@@ -36,7 +37,8 @@ const WaysOfDelivery = () => {
           </div>
         </div>
       </div>
-      <Cards />
+    </div>
+        <Cards />
     </div>
   );
 };

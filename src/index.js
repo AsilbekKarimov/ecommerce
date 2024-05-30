@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/delivery",
-        element: <WaysOfDelivery />, // Исправлено на правильный компонент
+        element: <WaysOfDelivery />, // Correct component
       },
       {
         path: "/aboutus",
