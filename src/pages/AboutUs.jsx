@@ -1,4 +1,5 @@
 import React from 'react';
+import PaymentCondition from '../components/AboutCompany/PaymentCondition';
 
 const AboutUs = () => {
   return (
@@ -100,6 +101,8 @@ const AboutUs = () => {
           Сделаем жизнь ярче, уютнее и комфортнее. В интернет-магазине Lalastore.ru найдется товар, который нужен именно Вам и Вашим малышам.
         </p>
       </div>
+      <PaymentCondition />
+
     </div>
   );
 }
