@@ -89,7 +89,7 @@ const GoogleMap = () => {
                   Ваше имя
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded"
+                  className="w-full px-3 py-2 border rounded outline-none input"
                   id="name"
                   type="text"
                   placeholder="Your name"
@@ -100,7 +100,7 @@ const GoogleMap = () => {
                   Телефон
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded"
+                  className="w-full px-3 py-2 border rounded outline-none input"
                   id="phone"
                   type="text"
                   placeholder="Your mobile phone"
@@ -111,7 +111,7 @@ const GoogleMap = () => {
                   E-mail
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded"
+                  className="w-full px-3 py-2 border rounded outline-none input"
                   id="email"
                   type="email"
                   placeholder="Your email"
@@ -125,7 +125,7 @@ const GoogleMap = () => {
                   Вопрос
                 </label>
                 <textarea
-                  className="w-full px-3 py-2 border rounded"
+                  className="w-full px-3 py-2 border rounded outline-none input"
                   id="question"
                   placeholder="Your question"
                 />
