@@ -5,7 +5,6 @@ import "./index.css";
 import {
   Home,
   AboutUs,
-  Delivery,
   HowBuy,
   Socials,
   Stocks,
@@ -14,6 +13,7 @@ import {
   Login,
   WaysOfDelivery,
   CardInfo,
+  NotFound,
 } from "./pages/main";
 import App from "./App";
 
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
       {
         path: "/howtobuy",
@@ -62,7 +66,6 @@ const router = createBrowserRouter([
         path: "/info",
         element: <CardInfo />,
       },
-    
     ],
   },
 ]);

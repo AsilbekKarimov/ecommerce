@@ -1,6 +1,7 @@
 import React from "react";
 import MainCard from "./MainCard";
 import { Link } from "react-router-dom";
+import TextTitle from "../TextTitle/TextTitle";
 
 const Cards = () => {
   const cardData = [
@@ -16,13 +17,18 @@ const Cards = () => {
     name.length > maxLength
       ? `${name.substring(0, maxLength - 3)}...`
       : name;
-  
+
   return (
-    <div className=" mx-auto flex flex-wrap py-[60px] bg-[#F4F4F4]">
-      <div className="w-full max-w-[90%] flex flex-wrap mx-auto justify-center">
-      {cardData.map((item, id) => (
-        <Link to={'/info'}><MainCard key={id} image={item.image} badge={item.badge} price={item.price} name={truncateDescription(item.name, 38)} /></Link>
-      ))}
+    <div className="px-[99px] mx-auto flex flex-wrap py-[35px] bg-[#F4F4F4] flex-col">
+      <div className="mb-[20px]">
+
+        <TextTitle text={"Ранее вы смотрели"} />
+      </div>
+
+      <div className="w-full  flex flex-wrap mx-auto justify-center">
+        {cardData.map((item, id) => (
+          <Link to={'/info'}><MainCard key={id} image={item.image} badge={item.badge} price={item.price} name={truncateDescription(item.name, 38)} /></Link>
+        ))}
       </div>
     </div>
   );
