@@ -2,15 +2,35 @@ import React, { useEffect, useState } from "react";
 import Button from "../components/Others/Button";
 import BlueBadge from "../components/Others/Badges/BlueBadge";
 import CardInfoSwiper from "../components/SwiperJS/CardInfoSwiper";
+import Cards from "../components/Cards/Cards";
 
 const CardInfo = () => {
-  
+  const [card, setCard] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      async function CardData() {
+          try {
+              let request = await fetch(
+                  "https://6651e1d520f4f4c44279069b.mockapi.io/api/v1/Cards"
+              );
+              let response = await request.json();
+              setCard(response);
+              setLoading(true);
+              console.log(response);
+          } catch (error) {
+              console.log("Error is caught");
+              setLoading(true);
+          }
+      }
+      CardData();
+  }, []);
 
   return (
     <div className="mt-[170px]">
       <div className="w-[100%] max-w-[90%] mx-auto">
-        <div className="flex lg:flex-row sm:flex-col lg:items-start sm:items-center">
-          <div className="flex sm:justify-center lg:justify-start">
+        <div className="flex lg:flex-row sm:flex-col lg:items-start gap-[20px] sm:items-center">
+          <div className="flex sm:justify-center lg:justify-start ">
             <div>
               <CardInfoSwiper />
             </div>  
@@ -91,6 +111,7 @@ const CardInfo = () => {
             <Button text={"ОСТАВИТЬ ОТЗЫВ"}/>
           </div>
         </div>
+        <Cards/>
       </div>
     </div>
   );

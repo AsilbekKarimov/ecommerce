@@ -16,6 +16,7 @@ import {
   NotFound,
 } from "./pages/main";
 import App from "./App";
+import Cards from "./components/Cards/Cards";
 
 const router = createBrowserRouter([
   {
@@ -64,7 +65,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/info",
-        element: <CardInfo />,
+        element: <CardInfo/>,
+        children: [{ path: ":id", element: <CardInfo /> }],
       },
     ],
   },
