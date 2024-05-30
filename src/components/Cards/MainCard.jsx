@@ -3,6 +3,7 @@ import GreenBadge from "../Others/Badges/GreenBadge";
 import BlueBadge from "../Others/Badges/BlueBadge";
 import RedBadge from "../Others/Badges/RedBadge";
 import Button from "../Others/Button";
+import TextTitle from "../TextTitle/TextTitle";
 
 const MainCard = (props) => {
   return (

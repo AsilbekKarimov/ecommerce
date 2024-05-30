@@ -18,17 +18,17 @@ const MainSwiper = ({ width, slides, delay }) => {
         speed={1000}
         autoplay={{
           delay: delay,
-          disableOnInteraction: false,  
+          disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper h-[360px]"
+        className="mySwiper h-[360px] rounded-[10px]"
       >
         {slides.map((slide, id) => (
-          <SwiperSlide key={id} className="relative">
+          <SwiperSlide key={id} className="relative ">
             <img
               src={slide.image}
               alt="swiper-img"
-              className="w-full h-full object-cover rounded-[10px]"
+              className="w-full h-full object-cover"
             />
             {slide.title && slide.description && (
               <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col gap-[25px] text-start pl-5">
