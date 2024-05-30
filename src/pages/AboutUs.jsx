@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AboutUs = () => {
-  return (
+  return(
     <div className=' max-w-[85%] mx-auto  mt-[174px]'>
       {/* О компании */}
       <div className="flex flex-col w-full text-start">
@@ -105,5 +105,5 @@ const AboutUs = () => {
     </div>
   )
 }
-
+ 
 export default AboutUs
