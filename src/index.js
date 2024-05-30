@@ -17,6 +17,7 @@ import {
 } from "./pages/main";
 import App from "./App";
 import PaymentCondition from "./components/AboutCompany/PaymentCondition";
+import DeliveryCondition from "./components/AboutCompany/DeliveryCondition";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/payment",
         element: <PaymentCondition />
+      },
+      {
+        path: "/deliverycondition",
+        element: <DeliveryCondition />
       },
       {
         path: "/socials",

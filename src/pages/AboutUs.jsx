@@ -2,8 +2,8 @@ import React from 'react';
 import PaymentCondition from '../components/AboutCompany/PaymentCondition';
 
 const AboutUs = () => {
-  return (
-    <div className=' max-w-[87%] mx-auto  mt-[174px]'>
+  return(
+    <div className=' max-w-[85%] mx-auto  mt-[174px]'>
       {/* О компании */}
       <div className="flex flex-col w-full text-start">
         <div className="grid h-11 w-full card rounded-box place-items-center -left-32 bg-[#F4F4F4] relative justify-start "><p className='text-[#33394F9E] relative left-32 '>Главная - О компании</p></div>
