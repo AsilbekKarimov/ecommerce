@@ -16,6 +16,7 @@ import {
   NotFound,
 } from "./pages/main";
 import App from "./App";
+import PaymentCondition from "./components/AboutCompany/PaymentCondition";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs />,
+      },
+      {
+        path: "/payment",
+        element: <PaymentCondition />
       },
       {
         path: "/socials",

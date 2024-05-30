@@ -1,4 +1,5 @@
 import React from 'react';
+import PaymentCondition from '../components/AboutCompany/PaymentCondition';
 
 const AboutUs = () => {
   return (
