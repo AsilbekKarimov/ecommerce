@@ -32,10 +32,10 @@ const Cards = () => {
   const { number, setNumber } = useContext(NumberContext);
 
   return (
-    <div className="px-[99px] mx-auto flex flex-wrap py-[35px] bg-[#F4F4F4] flex-col mt-[170px]">
+    <div className="flex flex-wrap py-[35px] bg-[#F4F4F4] flex-col mt-[170px]">
       <div className="mb-[20px]">
         <TextTitle text={"Ранее вы смотрели"} />
-      </div>
+      </div>  
 
       <div className="w-full flex flex-wrap mx-auto justify-center">
         {card.slice(0, 6).map((item, id) => (
