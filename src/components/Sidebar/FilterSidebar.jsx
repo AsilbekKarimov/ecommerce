@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Button from '../Others/Button';
 
-const Sidebar = ({ maxPrice, minPrice, colors, sizes }) => {
+const FilterSidebar = ({ maxPrice, minPrice, colors, sizes }) => {
   const [filterPrice, setFilterPrice] = useState([minPrice, maxPrice]);
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState([]);
@@ -112,10 +112,10 @@ const Sidebar = ({ maxPrice, minPrice, colors, sizes }) => {
         </div>
       </div>
       <div className={`${flexClassList.join(" ")} w-64 mt-[25px]`}>
-        <Button width="w-[217px]" text="Сбросить"/> 
+        <Button width="w-[217px]" text="Сбросить" onChange={resetFilters} />
       </div>
     </>
   );
 };
 
-export default Sidebar;
+export default FilterSidebar;

@@ -11,7 +11,6 @@ import { bannerSlides } from "../components/SwiperJS/BannerSlides.js";
 import { cardSlides } from "../components/SwiperJS/CardSlides.js";
 import { clothesSlides } from "../components/SwiperJS/ClothesSlides.js";
 import SubscribeNewsletter from "../components/SubscribeNewsletter.jsx";
-import FilterSidebar from "../components/Sidebar/FilterSidebar.jsx";
 
 const Home = () => {
   return (
