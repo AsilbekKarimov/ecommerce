@@ -88,7 +88,8 @@ const Home = () => {
         <Navbar />
       </header>
       <main className="mt-[190px]">
-        <FilterSidebar maxPrice={5000} minPrice={1000} colors={["red", "blue", "green"]} sizes={[30, 40, 50]} categories={["T-Shirts", "Jeans", "boots"]} />
+        <FilterSidebar maxPrice={5000} minPrice={1000} colors={["red", "blue", "green"]} sizes={[30, 40, 50]}/>
+        
         <div>
           <div className="h-full mx-auto w-[90%] flex flex-col items-center justify-center gap-[20px]">
             <div className="h-full mx-auto w-full flex items-center justify-center gap-[20px]">
