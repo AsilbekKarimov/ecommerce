@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './styles.css';
-
-// import required modules
 import { Navigation } from 'swiper/modules';
 
 const CardInfoSwiper = ({ width }) => {
-
     const [loading, setLoading] = useState(false);
     const [card, setCard] = useState([]);
+    const [mainImage, setMainImage] = useState("/card-info-images/card-info-swiper-main.png"); // Default main image
 
     useEffect(() => {
         async function CardData() {
@@ -33,69 +28,32 @@ const CardInfoSwiper = ({ width }) => {
         CardData();
     }, []);
 
-  return (
-    <div className="flex items-center justify-center h-[474px]" style={{ width }}>
-      <Swiper
-        direction={'vertical'}
-        slidesPerView={2}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        {card.map((slide, id) => (
-          <SwiperSlide>
-            <div key={id} className='flex size-[237px]'>
-              <img src={slide.image} alt='swiper-img' className="w-full" />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <img src="/card-info-images/card-info-swiper-main.png" alt="" />
-    </div>
-  );
+    const handleSlideClick = (image) => {
+        setMainImage(image);
+    };
+
+    return (
+        <div className="flex items-center justify-center h-[474px]" style={{ width }}>
+            <Swiper
+                direction={'vertical'}
+                slidesPerView={2}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Navigation]}
+                className="mySwiper"
+            >
+                {card.map((slide, id) => (
+                    <SwiperSlide key={id} onClick={() => handleSlideClick(slide.image)}>
+                        <div className='flex size-[237px]'>
+                            <img src={slide.image} alt='swiper-img' className="w-full cursor-pointer" />
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            <img className="main w-full h-full" src={mainImage} alt="main-img" />
+        </div>
+    );
 }
 
-export default CardInfoSwiper
-
-
-
-
-
-// import React, { useRef, useState } from 'react';
-// // Import Swiper React components
-// import { Swiper, SwiperSlide } from 'swiper/react';
-
-// // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-
-
-// // import required modules
-// import { Pagination } from 'swiper/modules';
-
-// export default function App() {
-//   return (
-//     <>
-//       <Swiper
-//         direction={'vertical'}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         modules={[Pagination]}
-//         className="mySwiper"
-//       >
-//         <SwiperSlide>Slide 1</SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//         <SwiperSlide>Slide 5</SwiperSlide>
-//         <SwiperSlide>Slide 6</SwiperSlide>
-//         <SwiperSlide>Slide 7</SwiperSlide>
-//         <SwiperSlide>Slide 8</SwiperSlide>
-//         <SwiperSlide>Slide 9</SwiperSlide>
-//       </Swiper>
-//     </>
-//   );
-// }
+export default CardInfoSwiper;
