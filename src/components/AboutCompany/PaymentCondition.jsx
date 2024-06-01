@@ -1,11 +1,11 @@
 import React from "react";
+import TextTitle from "../TextTitle/TextTitle";
 
 const PaymentCondition = () => {
   return (
     <div className="p-6">
-      <section className="mb-8">
-        <h2 className="text-xl font-bold mb-4">Условия оплаты и возврата</h2>
-
+      <div className="mb-8">
+<TextTitle text={"Условия оплаты и возврата"} />
         <h3 className="text-lg font-semibold mb-2">Оплата наличными</h3>
         <p className="mb-4">
           При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и
@@ -18,7 +18,7 @@ const PaymentCondition = () => {
           Также оплата наличными возможна при самовывозе из магазина, согласно
           его или исполнителя поставки.
         </p>
-      </section>
+      </div>  
 
       <section className="mb-8">
         <h3 className="text-lg font-semibold mb-2">

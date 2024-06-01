@@ -11,6 +11,7 @@ import { bannerSlides } from "../components/SwiperJS/BannerSlides.js";
 import { cardSlides } from "../components/SwiperJS/CardSlides.js";
 import { clothesSlides } from "../components/SwiperJS/ClothesSlides.js";
 import SubscribeNewsletter from "../components/SubscribeNewsletter.jsx";
+import FilterSidebar from "../components/Sidebar/FilterSidebar.jsx";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         <AboutCompany />
         <Cards />
         <SubscribeNewsletter />
+        <FilterSidebar maxPrice={3000} minPrice={0} colors={["red", "green", "yellow"]} sizes={[46]}  />
 
       </main>
     </>

@@ -112,7 +112,7 @@ const FilterSidebar = ({ maxPrice, minPrice, colors, sizes }) => {
         </div>
       </div>
       <div className={`${flexClassList.join(" ")} w-64 mt-[25px]`}>
-        <Button width="w-[217px]" text="Сбросить" onChange={resetFilters} />
+        <Button width="w-[217px]" text="Сбросить" onclick={resetFilters} />
       </div>
     </>
   );

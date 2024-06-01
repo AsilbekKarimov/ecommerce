@@ -10,14 +10,16 @@ import {
   Stocks,
   Saved,
   Cart,
-  Login,
   WaysOfDelivery,
   CardInfo,
   NotFound,
 } from "./pages/main";
 import App from "./App";
-import PaymentCondition from "./components/AboutCompany/PaymentCondition";
-import DeliveryCondition from "./components/AboutCompany/DeliveryCondition";
+import {
+  MainPage,
+  PaymentCondition,
+  DeliveryCondition,
+} from "./components/AboutCompany/main";
 
 const router = createBrowserRouter([
   {
@@ -43,14 +45,20 @@ const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs />,
-      },
-      {
-        path: "/payment",
-        element: <PaymentCondition />
-      },
-      {
-        path: "/deliverycondition",
-        element: <DeliveryCondition />
+        children: [
+          {
+            index: true,
+            element: <MainPage />,
+          },
+          {
+            path: "payment",
+            element: <PaymentCondition />,
+          },
+          {
+            path: "delivery",
+            element: <DeliveryCondition />,
+          },
+        ],
       },
       {
         path: "/socials",
@@ -67,10 +75,6 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
       },
       {
         path: "/info",

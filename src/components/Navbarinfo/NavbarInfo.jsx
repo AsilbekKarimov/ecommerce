@@ -28,12 +28,12 @@ const NavbarInfo = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link></Link></li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Как купить</li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Доставка</li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>О компании</li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Мы в instagram</li>
-                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'>Акции</li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/"}>Главная</Link></li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/howtobuy"}>Как купить</Link></li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/delivery"}>Доставка</Link></li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/aboutus"}>О компании</Link></li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/socials"}>Мы в instagram</Link></li>
+                        <li className='hover:text-[#33394F] hover:font-bold transition duration-100'><Link to={"/stocks"}>Акции</Link></li>
                     </ul>
                 </div>
             </div>
