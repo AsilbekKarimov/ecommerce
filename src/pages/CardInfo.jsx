@@ -1,24 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../components/Others/Button";
 import BlueBadge from "../components/Others/Badges/BlueBadge";
+import CardInfoSwiper from "../components/SwiperJS/CardInfoSwiper";
+import Cards from "../components/Cards/Cards";
 
 const CardInfo = () => {
+  const [card, setCard] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [selectedSize, setSelectedSize] = useState(73); // Default selected size
+
+  useEffect(() => {
+      async function CardData() {
+          try {
+              let request = await fetch(
+                  "https://6651e1d520f4f4c44279069b.mockapi.io/api/v1/Cards"
+              );
+              let response = await request.json();
+              setCard(response);
+              setLoading(true);
+              console.log(response);
+          } catch (error) {
+              console.log("Error is caught");
+              setLoading(true);
+          }
+      }
+      CardData();
+  }, []);
+
+  const handleSizeClick = (size) => {
+    setSelectedSize(size);
+  };
+
   return (
     <div className="mt-[170px]">
       <div className="w-[100%] max-w-[90%] mx-auto">
-        <div className="flex lg:flex-row sm:flex-col lg:items-start sm:items-center">
-          <div className="flex sm:justify-center lg:justify-start">
-            <div>
-              <img src="/card-info-images/card-info-swiper 1.png" alt="" />
-              <img src="/card-info-images/card-info-swiper 2.png" alt="" />
-            </div>
-            <img
-              src="/card-info-images/card-info-swiper-main.png"
-              className="w-[51.7%] object-cover"
-              alt=""
-            />
+        <div className="flex lg:flex-row sm:flex-col lg:items-start gap-[20px]">
+          <div className="flex sm:justify-center lg:justify-start ">
+            <div className="w-[700px] h-[300px]">
+              {
+                loading
+                ?
+                <CardInfoSwiper />
+                :
+                <div className="flex w-[200px] mx-auto">
+                  <span className="loading loading-spinner loading-lg h-[400px] "></span>
+                </div>  
+              }
+            </div>  
           </div>
-          <div className="flex flex-col lg:items-start sm:justify-center py-[45px] w-[50%]">
+          <div className="flex flex-col lg:items-start py-[45px] w-[50%] relative">
             <div className="flex mb-[15px] gap-[28px] items-center ">
               <p className="font-bold text-[24px]">
                 Боди без рукавов "ФРУК-ТИК", розовый
@@ -34,20 +64,20 @@ const CardInfo = () => {
             </div>
             <div className="flex items-center gap-[20px] pb-[30px]">
               <p>Размер:</p>
-              <div className="flex items-center gap-[10px] ">
-                <div className="rounded-[2px] bg-primary size-[34px] text-white flex items-center justify-center">
-                  73
-                </div>
-                <div className="rounded-[2px] border border-[#33394F] size-[34px] flex items-center justify-center">
-                  74
-                </div>
-                <div className="rounded-[2px] border border-[#33394F] size-[34px] flex items-center justify-center">
-                  75
-                </div>
+              <div className="flex items-center gap-[10px]">
+                {[73, 74, 75].map(size => (
+                  <div
+                    key={size}
+                    className={`button rounded-[2px] size-[34px] flex items-center justify-center cursor-pointer ${selectedSize === size ? 'bg-primary transition duration-150 active:scale-95 text-white' : 'border border-[#33394F]'}`}
+                    onClick={() => handleSizeClick(size)}
+                  >
+                    {size}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="flex flex-col gap-[30px]">
-              <div className="pt-[15px] border-t border-full flex gap-[30px] sm:flex-col lg:flex-row">
+              <div className="pt-[15px] border-t border-full flex gap-[30px] flex-wrap">
                 <div className="flex gap-[10px]">
                   <div className="bg-[#33394F] px-[14px] size-[66px] items-center justify-center flex rounded-full">
                     <img src="/card-info-images/Vector (3).png" alt="" />
@@ -88,12 +118,9 @@ const CardInfo = () => {
               100% хлопок
             </p>
           </div>
-          <div className="flex flex-col gap-[25px]">
-            <p className="font-bold text-[36px]">Отзывы</p>
-            <p>У данного товара нет отзывов. Станьте первым, кто оставил отзыв об этом товаре!</p>
-            <Button text={"ОСТАВИТЬ ОТЗЫВ"}/>
-          </div>
+
         </div>
+        <Cards/>
       </div>
     </div>
   );

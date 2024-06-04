@@ -8,7 +8,7 @@ import TextTitle from "../TextTitle/TextTitle";
 const MainCard = (props) => {
   return (
     <div className="text-center p-[8px] w-[220px]">
-      <div className="relative">
+      <div className="relative flex justify-center">
         {props.badge === "red" ? (
           <div className="flex absolute left-[-6px] top-[6px]">
             <RedBadge />
@@ -23,7 +23,7 @@ const MainCard = (props) => {
           </div>
         )}
 
-        <img src={props.image} className="pb-[12px]" alt="" />
+        <img src={props.image} className="pb-[12px] w-full items-center justify-center" alt="" />
       </div>
       <p className="font-bold pb-[15px] w-full max-w-[220px] p-2  ">{props.name}</p>
       <p className="font-bold pb-[21px]">{props.price}</p>

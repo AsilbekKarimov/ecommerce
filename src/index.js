@@ -20,6 +20,7 @@ import {
   PaymentCondition,
   DeliveryCondition,
 } from "./components/AboutCompany/main";
+import Cards from "./components/Cards/Cards";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +80,7 @@ const router = createBrowserRouter([
       {
         path: "/info",
         element: <CardInfo />,
+        children: [{ path: ":id", element: <CardInfo /> }],
       },
     ],
   },
